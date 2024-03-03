@@ -8,8 +8,8 @@ eureka:
     register-with-eureka: true
     service-url:
       #       here you add the url of the eureka server you want to connect to (ex: service registry)
-      # defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka/}
- defaultZone: ${EUREKA_SERVER_ADDRESS}
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka/}
+
 okta:
   oauth2:
     issuer: https://dev-16694783.okta.com/oauth2/default
